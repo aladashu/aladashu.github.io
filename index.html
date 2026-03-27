@@ -2,49 +2,68 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8" />
-  <title>阿拉大叔 · 个人主页</title>
+  <title>阿拉大叔 · aladashu.github.io</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="static/style.css" />
+  <meta name="description" content="阿拉大叔的个人主页 · aladashu.github.io" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="page">
-    <header>
-      <div class="avatar">叔</div>
-      <div>
-        <h1>阿拉大叔</h1>
-        <div class="tagline">写点代码，喝点咖啡，顺便记录生活。</div>
+    <header class="site-header">
+      <div class="brand">
+        <div class="logo">A</div>
+        <div class="brand-text">
+          <div class="site-name">阿拉大叔</div>
+          <div class="site-subtitle">aladashu.github.io</div>
+        </div>
       </div>
+      <nav class="nav">
+        <a href="#about">关于</a>
+        <a href="#work">在做什么</a>
+        <a href="#contact">联系</a>
+      </nav>
     </header>
 
     <main>
-      <section>
-        <h2>关于我</h2>
-        <p>
-          菜鸟的程序员一枚，喜欢简单的设计、好用的工具和不折腾的生活方式。
+      <section class="hero">
+        <h1>保持简单，稳稳向前。</h1>
+        <p class="hero-text">
+          这里是阿拉大叔的个人一页站。安静写代码，慢慢做产品，偶尔记录一点有用的东西。
         </p>
       </section>
 
-      <section>
-        <h2>最近在折腾</h2>
-        <ul>
-          <li>· 维护几个小玩具项目（脚本、工具、小网站）</li>
-          <li>· 整理多年来的笔记，慢慢搬到线上</li>
-          <li>· 偶尔写写博客，分享一点经验和踩过的坑</li>
+      <section id="about" class="section">
+        <h2>关于我</h2>
+        <p>
+          一名偏后端的开发者，长期和业务系统、脚本工具打交道，喜欢稳定、可维护而不是华丽堆叠。
+          技术只是手段，更在意做出来的东西能不能长期跑下去。
+        </p>
+      </section>
+
+      <section id="work" class="section">
+        <h2>在做什么</h2>
+        <ul class="list">
+          <li>整理个人工具库，把零散脚本慢慢变成可复用的小组件。</li>
+          <li>尝试用简单的方式记录经验，让后来者少踩一点坑。</li>
+          <li>给未来的项目打基础，而不是一次性“炫技作品”。</li>
         </ul>
       </section>
 
-      <section>
-        <h2>找到我</h2>
-        <ul>
-          <li>邮箱：<a href="mailto:aladashu#outlook.com">aladashu#outlook.com</a></li>
-          <li>GitHub：<a href="https://github.com/aladashu" target="_blank">github.com/aladashu</a></li>
-          <li>博客：<a href="https://aladashu.github.io" target="_blank">aladashu.github.io</a></li>
-        </ul>
+      <section id="contact" class="section">
+        <h2>联系</h2>
+        <p>
+          如果你对代码、工具或长期主义感兴趣，可以通过 Telegram 找到我。
+        </p>
+        <p class="contact-line">
+          Telegram：<a href="https://t.me/aladashu" target="_blank">@aladashu</a>
+        </p>
       </section>
     </main>
 
-    <footer>
-      © <span id="year"></span> 阿拉大叔 · 保持简单
+    <footer class="site-footer">
+      <span>© <span id="year"></span> 阿拉大叔</span>
+      <span class="dot">·</span>
+      <span>aladashu.github.io</span>
     </footer>
   </div>
 
